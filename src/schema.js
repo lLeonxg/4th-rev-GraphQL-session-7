@@ -1,6 +1,20 @@
 export const typeDefs = /* GraphQL */ `
     enum TruckStatus { AVAILABLE IN_ROUTE MAINTENANCE }
     enum PackageStatus { PENDING IN_TRANSIT DELIVERED }
+    enum IncidentStatus { OPEN IN_PROGRESS RESOLVED }
+    enum IncidentType { DELAY BREAKDOWN ACCIDENT TRAFFIC }
+    enum IncidentSeverity { LOW MEDIUM HIGH CRITICAL }
+
+    type Incident {
+        id: ID!
+        type: IncidentType!
+        severity: IncidentSeverity!
+        message: String!
+        timestamp: String!
+        status: String!
+        driver: Driver!
+        truck: Truck!
+    }
 
     type Address {
         line1: String!
