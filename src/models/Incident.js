@@ -12,6 +12,4 @@ const incidentSchema = new mongoose.Schema({
 }, { timestamps: true }
 );
 
-const Incident = mongoose.model('Incident', incidentSchema);
-
-export default Incident;
+export default mongoose.model('Incident', incidentSchema);

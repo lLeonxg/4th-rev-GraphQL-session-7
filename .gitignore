@@ -1,5 +1,5 @@
 .
-env 
+.env 
 NODE_MODULES
 .DS_Store   
 dist
@@ -19,3 +19,4 @@ src/**/*.test.js
 src/**/*.spec.js
 src/**/*.test.jsx
 src/**/*.spec.jsx
+.env
