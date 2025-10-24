@@ -1,5 +1,6 @@
 import Truck from '../../models/Truck.js';
 import Route from '../../models/Route.js';
+import Package from '../../models/Package.js';
 
 
 
